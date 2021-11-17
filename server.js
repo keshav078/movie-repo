@@ -15,7 +15,6 @@ app.get('/api/movies', (req, res) => {
         if (err) {
             throw err;
         }
-        console.log('====data===', data);
         res.send(JSON.parse(data));
     })
 });
